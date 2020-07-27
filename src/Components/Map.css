@@ -1,0 +1,27 @@
+.Map {
+    height: 500px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 16px;
+}
+.Map .leaflet-container{
+    height: 100%;
+}
+.Popup_flag img {
+    width: 100px;
+}
+.Popup_flag {
+    height: 80px;
+    width: 100%;
+    background-size:cover;
+    border-radius:8px;
+}
+.Popup_container {
+    width: 150px;
+}
+.Popup_name {
+    font-size: 1rem;
+    font-weight: bold;
+    color:#555;
+}

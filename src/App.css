@@ -1,38 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+* {
+  margin:0;
+}
+body {
+  background-color: #f5f6fa;
+}
+.App_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App_title {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.2rem;
+}
+.App_dropdown_img {
+  margin-left: auto;
+  width: 7%;
+}
+.Stats_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App_left {
+  flex:0.9;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App_right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App_right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow:1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.App_graph{
+  flex-grow:1;
+}
+@media(max-width:700px) {
+  .App {
+    flex-direction: column;
   }
 }
